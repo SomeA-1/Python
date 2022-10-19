@@ -3,6 +3,76 @@
 #Harjutus04
 
 
+#rutkub
+for i in range (0,10):
+    print(f"{i};{i**2};{i**3}")
+
+#Pank
+intress=0.05
+raha= int(input("kui palju raha te soovite panka panna?:"))
+kaua= int(input("Mitmeks aastaks?:"))
+
+for i in range(kaua):
+    
+#    print("Aasta;Algsumma;Intress;Aasta Lõpuks")
+    print(f"{i}; {raha}; {intress}; {raha*intress}")
+    profit=raha*intress
+    raha=raha+profit
+
+#ARVA
+import random
+loop = 1
+while loop==1:
+    arv=random.randint(1,3)
+    for i in range(3):
+        guess = int(input("Arva arv 1-3:"))
+        if guess==arv:
+            print("WAHOOOOOOOOOOOOOOOOOOO")
+            break
+        else:
+            print("Paku uuesti")
+    loop = int(input("Jätka? 0/1:"))
+print("gameover")
+        
+
+#VIIIED
+for i in range(1,101):
+    if i%5!=0:
+        print(i)
+
+#Korrutustabel
+arv=5
+for i in range(10):
+    print(f"{arv}*{i}={arv*i}")
+
+#Paaris, paaritu
+for i in range (0,999999999999999):
+    if i%2==0:
+        print(f"{i} on paarisarv")
+    else:
+        print(f"{i} on paaritu")
+
+#Lotta bitches
+import random
+for i in range(5):
+    print(random.randint(0,9),end=" ")
+
+#Tagurpidi kolmnurk
+j=10
+for i in range(10): 
+    print("* " *j)
+    j-=1
+
+#Kolmnurk
+j=1
+for i in range(1054):
+    print("* " * j)
+    j+=1
+    
+#5x5 grid
+for i in range(5):
+    print("* " * 5)
+
 #FutBol
 sugu = input("Sisestage oma sugu (m/n):")
 if sugu == "mees":
